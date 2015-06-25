@@ -6,7 +6,7 @@ def primecheck(p):
         print "Number is a prime."
     else:
         d += 1
-        def primecheck(d):
+        def primecalc(d):
             while p%d != 0:
                 d += 1
             if p == d:
