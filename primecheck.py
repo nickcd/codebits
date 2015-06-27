@@ -1,17 +1,19 @@
 def primecheck(p):
+    def primecalc(d):
+        while p%d != 0:
+            d += 1
+        if p == d:
+            return bool(True)
+        else:
+            if p%d == 0:
+                return bool(False)
     d = 2
-    if p%d == 0:
-        print "Number is not a prime."
-    elif p == d:
-        print "Number is a prime."
+    if p == 1:
+        return bool(False)
+    elif p == 2:
+        return bool(True)
+    elif p%d == 0:
+        return bool(False)
     else:
         d += 1
-        def primecalc(d):
-            while p%d != 0:
-                d += 1
-            if p == d:
-                print "Number is a prime."
-            else:
-                if p%d == 0:
-                    print "Number is not a prime."
-        primecalc(d)
+        return primecalc(d)
