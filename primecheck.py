@@ -1,3 +1,6 @@
+# Number -> Boolean
+# Returns True if Number is a prime number
+
 def primecheck(p):
     def primecalc(d):
         while p%d != 0:
